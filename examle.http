@@ -1,0 +1,25 @@
+@local=http://192.168.1.39:4000/auth
+
+POST {{local}}/signup
+Content-Type: application/json  
+
+{
+    "firstName":"aaaa",
+    "lastName":"aaaa",
+    "email":"xxxx@gmail.com",
+    "password":"aaaaaaa"
+}
+
+###
+POST {{local}}/login
+Content-Type: application/json  
+
+{
+    "username":"xxxx@gmail.com",
+    "password":"aaaaaaa"
+}
+
+###
+GET {{local}}/currentUser
+Content-Type: application/json  
+Authorization:b-HB8Src_y8gf5q5nvpr4S4Q1mRFBW5Y
